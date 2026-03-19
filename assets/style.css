@@ -1,0 +1,100 @@
+.fancy-text {
+    display: inline-block;
+    font-weight: bold;
+}
+
+/* LOOP CONTROL */
+.loop {
+    animation-iteration-count: infinite;
+}
+
+/* 1 Fade */
+.fade {
+    animation: fadeAnim 2s;
+}
+@keyframes fadeAnim {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+/* 2 Slide */
+.slide {
+    animation: slideAnim 2s;
+}
+@keyframes slideAnim {
+    from {transform: translateY(50px);}
+    to {transform: translateY(0);}
+}
+
+/* 3 Zoom */
+.zoom {
+    animation: zoomAnim 2s;
+}
+@keyframes zoomAnim {
+    from {transform: scale(0);}
+    to {transform: scale(1);}
+}
+
+/* 4 Rotate */
+.rotate {
+    animation: rotateAnim 2s;
+}
+@keyframes rotateAnim {
+    from {transform: rotate(-180deg);}
+    to {transform: rotate(0);}
+}
+
+/* 5 Blur */
+.blur {
+    animation: blurAnim 2s;
+}
+@keyframes blurAnim {
+    from {filter: blur(10px);}
+    to {filter: blur(0);}
+}
+
+/* 6 Glow */
+.glow {
+    animation: glowAnim 1.5s alternate infinite;
+}
+@keyframes glowAnim {
+    from {text-shadow: 0 0 5px #fff;}
+    to {text-shadow: 0 0 20px #00f;}
+}
+
+/* 7 Wave */
+.wave {
+    animation: waveAnim 2s infinite;
+}
+@keyframes waveAnim {
+    0% {transform: translateY(0);}
+    50% {transform: translateY(-10px);}
+    100% {transform: translateY(0);}
+}
+
+/* 8 Bounce */
+.bounce {
+    animation: bounceAnim 1s infinite;
+}
+@keyframes bounceAnim {
+    0%,100% {transform: translateY(0);}
+    50% {transform: translateY(-20px);}
+}
+
+/* 9 Flip */
+.flip {
+    animation: flipAnim 2s;
+}
+@keyframes flipAnim {
+    from {transform: rotateY(180deg);}
+    to {transform: rotateY(0);}
+}
+
+/* 10 Neon */
+.neon {
+    color: #fff;
+    text-shadow:
+        0 0 5px #0ff,
+        0 0 10px #0ff,
+        0 0 20px #0ff;
+}
